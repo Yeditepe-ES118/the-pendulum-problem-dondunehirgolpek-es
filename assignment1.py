@@ -19,8 +19,10 @@ def find_period(L0, L1):
     # print results 
     for L, T in zip(lengths, periods):
         print("When L = %.1f m, T = %.1f s" % (L, T))
-        
-# example run
-find_period(2, 10)
+    
+    # return results for testing 
+    return [(L, T) for L, T in zip(lengths, periods)]
 
+# --- Example run (for L0 = 2 m, L1 = 10 m) ---
+find_period(2,10)
 
